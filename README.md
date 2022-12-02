@@ -1,2 +1,2 @@
 # .github
-.github special repository
+.github special repository for default files
