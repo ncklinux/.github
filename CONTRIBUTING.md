@@ -13,6 +13,11 @@ For those just getting started with pull requests, GitHub has a [how to](https:/
 - Make sure that you are using the latest version from “base” branch.
 - Sign commits locally by using [GPG](https://docs.github.com/en/authentication/managing-commit-signature-verification/signing-commits).
 - Follow the [Conventional Commits](https://www.conventionalcommits.org) specification and the commit message should never exceed 100 characters.
+- Python projects:
+  - Follow [PEP8](https://peps.python.org/pep-0008/) styles with some exceptions:
+    - Do not use `self` in functions if it's not in use (just like PyCharm prompts).
+    - Factory function names (those that return an object) must have the first letter capitalized.
+  - Use [Black](https://github.com/psf/black) for formatting.
 - Include unit tests when you contribute new features, as they help to:
   - Prove that your code works correctly.
   - Guard against future breaking changes to lower the maintenance cost.
